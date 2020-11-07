@@ -1,0 +1,67 @@
+2830 Final CYA Document
+
+
+Name:Adrian Atanasov
+Pawprint: asa368
+Date: 04/21/20
+Final Project
+Popup login taken from link below
+https://www.w3docs.com/snippets/javascript/how-to-create-a-popup-form-with-css-and-javascript.html
+
+login backend taken from lecture for user authentication
+
+
+An  HTML5  DOCTYPE  is  required with  the  5 required tags. - contained in all pages leaguestats.php challengerstats.php mastersstats.php
+
+The  pages/sections that  make  up  the  web  application  must  have  a  consistent design/interface. There should be elements of each page/section that they share in common such as a header, menu, footer, etc. You have flexibility in how you implement your design,
+but  it  should  not just be a random set of page/section designs.
+The user should have a consistent  and  understandable  experience  when  moving  from  page  to  page,  section  to section, or application function to application function.
+The web application must be well-structured and logically organized.
+Changes to common elements in a page design must be easy to implement.
+A common element is an element that is repeated on multiple (or all) pages/sections such as a header, menu, and/or footer.
+If a common element has to be changed by editing it in multiple places in the code, then your implementation is not  correct
+
+
+The above can be seen in assets/app.css, most of the code for the web page is in the generalized elements 
+
+Username : test
+password: pass
+
+You must properly use GET and POST. Using GET for private information is not acceptable. GET  should  not  be  used  to  take  an  action  such  as  deleting  information  or  submitting  a password.
+Remember that GET places the information in the URL and should be used for data retrieval!
+
+
+- Login form uses post(on challenger, and master pages )31 - 45
+
+the charts/graphs use get methods
+In the .js files. Essentially the whole file is for the get method logic for each page
+
+
+The  web  application  must  utilize  jQuery  UI  or  Bootstrap  interface  elements. This means jQuery UI functions like draggable() or button().
+Not a jQuery template. If a template is used then you will receive a zero for your score.
+
+- used a lot of Bootstrap as can be seen by the classes added to some of the table elements in all of the .php files 
+30,48,54,55,56,59,79 in mastersstats.php
+29,47,53,54,55,57,70,76 in challenger.php
+ - used the bootstrap docs to get the proper classes and their usage for the divs
+
+
+For the charts and the graphs, I used Chart.js to create them and used their documentation for the creation of these graphs.
+I also pulled a function from the following website
+https://css-tricks.com/the-many-ways-of-getting-data-into-charts/
+ - Per professor Wergeles, the graphs should count toward the multiple pictures on a page requirement.
+
+These are in the leaguestats.php chart code can be seen in the leaguestats.js
+
+Video requirement is on the main page
+
+If you try to put leaguestats.php in the url after final/ then it should kick you back to the main page.
+
+
+****KNOWN ISSUE***
+On the graphs, when the page first loads the information will not populate, please select a different item from the drop down and it will populate the graphs. Once you go back to the original, it will populate accordingly. I just can't seem to figure out why it does this...
+
+
+In the data folder getData.sh is how I got all my data from the Riot API unfortunately, they did not approve of a long term api key in time for this projects completion so the data you see on the website is a bit state, would it be running live, that getData.sh script would run every minute, and pull the files down to a location and rename them so the server would be able to recognize them and modify the values on the website when it reloads.
+
+
